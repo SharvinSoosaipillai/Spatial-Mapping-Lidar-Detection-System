@@ -6,12 +6,12 @@ The objective of this project is attempting to recreate a physical environment w
 ![Image](Assets/MicroController_Config_2.jpg)
 
 
-# Hardware Set up
+## Hardware Set up
 In order to accurately set up this device, please follow the pin diagram as listed below
 ![Image](Assets/Pin_Out_Diagram.png)
 
-# Software Set up
-Ensure that you are running Python 3.8.10. The Open3D and pyserial dependencies is used for this project. To install these, run the following commands:
+## Software Set up
+Ensure that you are running Python 3.8.10. The Open3D and Pyserial dependencies is used for this project. To install these, run the following commands:
 
 ```bash
 pip install open3d pyserial
@@ -19,7 +19,7 @@ pip install open3d pyserial
 
 Additionally, the microcontroller is also programmed using C in the KEIL IDE enviorment, thus it is recomended that the same enviorment is used to flash the program onto the microcontroller. 
 
-# Application
+## Application
 Once the circuit has been designed, perform the following in a sequential order
 1. Download the Keil Project and Python script required.
 2. Plug in microcontroller to the computer via the usb cable.
@@ -29,7 +29,7 @@ Once the circuit has been designed, perform the following in a sequential order
 6. In the python script, change the “SPACING” measurement to users specifications.
 7. Open device manager and navigate to Ports to identify which port has enabled UART (will be shown as COMX (UART))
 8. Change line 8 in the python file to the same COM port as specified in the users device manager
-9. After configuration, the users can run the python script by typing
+9. After configuration, the users can run the python script running the following command:
 
 ```bash
 python Data Visualization/project.py
@@ -39,7 +39,8 @@ python Data Visualization/project.py
 12. The user must press on board button PJ1 to begin the scanning process.
 13. Once the scanning procedure is complete, a 3D visualization of the user's environment will appear on the computer screen, signifying the end of the process. 
 
-# Results
+## Results
 An example of its usage can be displayed below, where it had been used to scan a hallway with a high degree of accuracy. 
+
 ![Scanning Location](Assets/Hallway.jpg)
 ![Hallway Scan](Assets/Hallway_Scan.png)
