@@ -1,6 +1,7 @@
 # Spatial-Mapping-Lidar-Detection-System
 
 The objective of this project is attempting to recreate a physical environment with a virtual simulation. This is done by using the a Time of Flight (ToF) Sensor, a stepper motor, the VL53L1X driver board and the MSP432E401Y Microcontroller to collect real time information about the surrounding environment. From there, it employees a python script to generate a virtual representation of the environment. 
+
 ![Image](Assets/MicroController_Config_1.jpg)
 ![Image](Assets/MicroController_Config_2.jpg)
 
